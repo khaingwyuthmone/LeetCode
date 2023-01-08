@@ -12,7 +12,7 @@
  * @return {number}
  */
 var maxIceCream = function(costs, coins) {
-    let sorted_array = costs.sort((a,b)=> a-b);
+    costs.sort((a,b)=> a-b);
     
     for(let i=0; i<costs.length; i++){
         if(coins >= costs[i]){
